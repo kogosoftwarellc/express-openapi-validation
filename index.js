@@ -136,10 +136,11 @@ function validate(args) {
         errors: [schemaError]
       };
     }
-
-    err.toString = function() {
-      return JSON.stringify(this.errors);
-    };
+    if (err) {
+      err.toString = function() {
+        return JSON.stringify(this.errors);
+      };
+    }
 
     next(err);
   };
