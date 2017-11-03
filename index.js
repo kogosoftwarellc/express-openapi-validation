@@ -137,6 +137,10 @@ function validate(args) {
       };
     }
 
+    err.toString = function() {
+      return JSON.stringify(this.errors);
+    };
+
     next(err);
   };
 }
