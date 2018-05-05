@@ -1,3 +1,5 @@
+# This repository has moved to https://github.com/kogosoftwarellc/open-api/tree/master/packages/express-openapi-validation
+
 # express-openapi-validation [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url]
 > Express middleware for openapi parameter validation.
 
