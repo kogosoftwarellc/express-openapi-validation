@@ -136,6 +136,11 @@ function validate(args) {
         errors: [schemaError]
       };
     }
+    if (err) {
+      err.toString = function() {
+        return JSON.stringify(this.errors);
+      };
+    }
 
     next(err);
   };
